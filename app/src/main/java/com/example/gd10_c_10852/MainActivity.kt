@@ -14,6 +14,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
         showDataFragment()
         binding.txtCari.setOnKeyListener(View.OnKeyListener{ _, keyCode, event->
             if(keyCode == KeyEvent.KEYCODE_ENTER && event.action
